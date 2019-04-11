@@ -2,14 +2,14 @@
 # ![Triangle logo](https://user-images.githubusercontent.com/883386/32769128-4d9625c6-c923-11e7-9a96-030f2f0efff3.png)
 
 [![Build Status](https://travis-ci.org/esimov/triangle.svg?branch=master)](https://travis-ci.org/esimov/triangle)
-[![GoDoc](https://godoc.org/github.com/golang/gddo?status.svg)](https://godoc.org/github.com/esimov/triangle)
+[![GoDoc](https://godoc.org/github.com/golang/gddo?status.svg)](https://godoc.org/github.com/novln/triangle)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat)](./LICENSE)
-[![release](https://img.shields.io/badge/release-v1.0.4-blue.svg)](https://github.com/esimov/triangle/releases/tag/v1.0.4)
+[![release](https://img.shields.io/badge/release-v1.0.4-blue.svg)](https://github.com/novln/triangle/releases/tag/v1.0.4)
 [![homebrew](https://img.shields.io/badge/homebrew-v1.0.4-orange.svg)](https://github.com/esimov/homebrew-triangle)
 
 Triangle is a tool to generate image arts with [delaunay triangulation](https://en.wikipedia.org/wiki/Delaunay_triangulation). It takes an input image and converts it to an abstract image composed of tiles of triangles.
 
-![Sample image](https://github.com/esimov/triangle/blob/master/output/sample_3.png)
+![Sample image](https://github.com/novln/triangle/blob/master/output/sample_3.png)
 
 ### The technique
 * First the image is blured out to smothen the sharp pixel edges. The more blured an image is the more diffused the generated output will be.
@@ -27,11 +27,11 @@ triangles = delaunay.Init(width, height).Insert(points).GetTriangles()
 ```
 ## Installation and usage
 ```bash
-$ go get -u -f github.com/esimov/triangle/cmd/triangle
+$ go get -u -f github.com/novln/triangle/cmd/triangle
 $ go install
 ```
 ## MacOS (Brew) install
-The library can be installed via Homebrew too or by downloading the binary file from the [releases](https://github.com/esimov/triangle/releases) folder.
+The library can be installed via Homebrew too or by downloading the binary file from the [releases](https://github.com/novln/triangle/releases) folder.
 
 ```bash
 $ brew tap esimov/triangle
@@ -91,17 +91,17 @@ $ triangle -in samples/input.jpg -out output.png -wireframe=2 -max=5500 -stroke=
 
 ### Examples
 
-<a href="https://github.com/esimov/triangle/blob/master/output/sample_3.png"><img src="https://github.com/esimov/triangle/blob/master/output/sample_3.png" width=420/></a>
-<a href="https://github.com/esimov/triangle/blob/master/output/sample_4.png"><img src="https://github.com/esimov/triangle/blob/master/output/sample_4.png" width=420/></a>
-<a href="https://github.com/esimov/triangle/blob/master/output/sample_5.png"><img src="https://github.com/esimov/triangle/blob/master/output/sample_5.png" width=420/></a>
-<a href="https://github.com/esimov/triangle/blob/master/output/sample_6.png"><img src="https://github.com/esimov/triangle/blob/master/output/sample_6.png" width=420/></a>
-![Sample_0](https://github.com/esimov/triangle/blob/master/output/sample_0.png)
-![Sample_1](https://github.com/esimov/triangle/blob/master/output/sample_1.png)
-![Sample_11](https://github.com/esimov/triangle/blob/master/output/sample_11.png)
-![Sample_8](https://github.com/esimov/triangle/blob/master/output/sample_8.png)
+<a href="https://github.com/novln/triangle/blob/master/output/sample_3.png"><img src="https://github.com/novln/triangle/blob/master/output/sample_3.png" width=420/></a>
+<a href="https://github.com/novln/triangle/blob/master/output/sample_4.png"><img src="https://github.com/novln/triangle/blob/master/output/sample_4.png" width=420/></a>
+<a href="https://github.com/novln/triangle/blob/master/output/sample_5.png"><img src="https://github.com/novln/triangle/blob/master/output/sample_5.png" width=420/></a>
+<a href="https://github.com/novln/triangle/blob/master/output/sample_6.png"><img src="https://github.com/novln/triangle/blob/master/output/sample_6.png" width=420/></a>
+![Sample_0](https://github.com/novln/triangle/blob/master/output/sample_0.png)
+![Sample_1](https://github.com/novln/triangle/blob/master/output/sample_1.png)
+![Sample_11](https://github.com/novln/triangle/blob/master/output/sample_11.png)
+![Sample_8](https://github.com/novln/triangle/blob/master/output/sample_8.png)
 
 
 ## License
 Copyright © 2018 Endre Simo
 
-This project is under the MIT License. See the [LICENSE](https://github.com/esimov/triangle/blob/master/LICENSE) file for the full license text.
+This project is under the MIT License. See the [LICENSE](https://github.com/novln/triangle/blob/master/LICENSE) file for the full license text.

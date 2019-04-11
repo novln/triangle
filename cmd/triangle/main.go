@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/esimov/triangle"
+	"github.com/novln/triangle"
 )
 
 const helperBanner = `

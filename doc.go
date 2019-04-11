@@ -14,7 +14,7 @@ Example to generate triangulated image and output the result as raster type:
 
 	import (
 		"fmt"
-		"github.com/esimov/triangle"
+		"github.com/novln/triangle"
 	)
 
 	func main() {
@@ -37,7 +37,7 @@ Example to generate triangulated image and output the result to SVG:
 
 	import (
 		"fmt"
-		"github.com/esimov/triangle"
+		"github.com/novln/triangle"
 	)
 
 	func main() {
